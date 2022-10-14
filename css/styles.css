@@ -41,12 +41,15 @@ a{
   font-family: 'Montserrat', sans-serif;
   margin: 10px 20px;
   text-decoration: none;
+  background-image: url();
+
 }
 
 .top-container {
   background-color: #E4F9F5;
   position: relative;
   padding-top: 100px;
+
 }
 
 .middle-container {
@@ -64,9 +67,6 @@ a{
   line-height: 2;
 }
 
-.pro{
-  text-decoration: underline;
-}
 
 .top-cloud {
   position: absolute;
@@ -90,4 +90,28 @@ a{
 .img2{
   float: left;
   margin-right: 30px;
+
+}
+.grid-col-span-2{
+  grid-column: span 2;
+}
+.grid-container{
+  margin: 15rem;
+  display:grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(4,1fr);
+
+
+}
+.card{
+  border: 2px solid black;
+
+}
+.card:last-child{
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.text-spacing{
+  text-align: center;
 }
